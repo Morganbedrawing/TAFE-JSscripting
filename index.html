@@ -1,0 +1,87 @@
+<!DOCTYPE html> <!--Thomas Morgan-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelos Training Institute Homepage</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/Gelos_logo.png" alt="Gelos Training Institute Logo" class="logo-img">
+            </a>
+            <div class="site-title">
+                <h1>Gelos Training Institute</h1>
+                <span class="subtitle">Australia</span>
+            </div>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <form class="searchbar" role="search">
+                <input type="text" placeholder="Search..." aria-label="Search" id="searchForm">
+                <button type="submit" class="search-btn">
+                    <img src="images/icons/googlefonts_icons/search_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="Search" class="search-icon">
+                </button>
+            </form>
+        </div>
+        <nav id="mainNav" class="nav-collapsed" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <!-- banner image -->
+        <img src="images/lectureroom.jpg" alt="Gelos Training Institute Banner" class="banner-image">
+    </div>
+    <main>
+        <!-- Main content area -->
+        <section>
+            <h2>Our Mission</h2>
+            <p>At Gelos Training Institute, we strive to provide high-quality education and training to empower individuals and enhance their skills.</p>
+        </section>
+        <section>
+            <h2>Featured Courses</h2>
+            <p>
+                Explore our range of courses designed to meet the needs of various learners.
+                We offer courses in web development, data science, and more. Each course is tailored to provide practical skills and knowledge that are relevant in today's job market.</p>
+            </p>
+        </section>
+        <section>
+            <div class="slider">
+                <img id="sliderImg" src="images/slider_images/study1.jpg" alt="Slider Image" width="400"><br>
+                <button type="button" class="button-slider" onclick="prevSlide()">Prev</button>
+                <button type="button" class="button-slider" onclick="nextSlide()">Next</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Gelos Training Institute. All rights reserved.</p>
+                    <p>Microsoft. (2025). Copilot (May version) [Large language model]. https://copilot.microsoft.com has been used to assist in this webiste project <br>
+            The usage of ai considers the TAFE policy <a href="https://cd.tafensw.edu.au/api/-/media/Files/PDFs/Brochures-Flyers/TAFE-NSW-Generative-Artificial-Intelligence-in-Education-Policy.pdf?rev=782ce766d8614a72a0bdd1d1db6ec63a"><u><b>Generative Artificial Intelligence in Education</b></u> </a>.
+            </p><br>
+            <p>This is a fictitious site created for educational purposes. Sources of graphic icons:
+            <a href="https://www.freepik.com/icon/facebook_1384021#fromView=resource_detail&position=14"><u>Freepik Social media Icons</u></a>    
+            <a href="https://fonts.google.com/icons"><u>GOOGLE icons</u></a>    
+        </p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/" aria-label="Facebook">
+                <img src="images/icons/icons_general/facebook_1384021.png" class="footer-social-icon" alt="Facebook icon">
+            </a>
+            <a href="https://www.instagram.com/" aria-label="Instagram">
+                <img src="images/icons/icons_general/instagram_1384031.png" class="footer-social-icon" alt="Instagram icon">
+            </a>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/sliderImg.js"></script>
+</body>
+</html>

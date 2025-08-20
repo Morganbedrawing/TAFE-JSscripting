@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry - Gelos Training Institute</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/Gelos_logo.png" alt="Gelos Training Institute Logo" class="logo-img">
+            </a>
+            <div class="site-title">
+                <h1>Gelos Training Institute</h1>
+                <span class="subtitle">Australia</span>
+            </div>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Open navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <form class="searchbar" role="search">
+                <input type="text" placeholder="Search..." aria-label="Search" id="searchForm">
+                <button type="submit" class="search-btn">
+                    <img src="images/icons/googlefonts_icons/search_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="Search" class="search-icon">
+                </button>
+            </form>
+        </div>
+        <nav id="mainNav" class="nav-collapsed" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Enquiry Form</h2>
+        <form id="contactForm" action="#" method="post" id="enquiryForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" autocomplete="given-name">
+            <span class="error" id="firstNameError"></span>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" autocomplete="family-name">
+            <span class="error" id="lastNameError"></span>
+
+            <label for="email">Email:</span></label>
+            <input type="text" id="email" name="email" autocomplete="email">
+            <span class="error" id="emailError"></span>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" maxlength="10" placeholder="04XXXXXXXX" autocomplete="tel">
+            <span class="error" id="phoneError"></span>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" autocomplete="off"></textarea>
+            <span class="error" id="messageError"></span>
+
+            <label for="course">Course</label>
+            <select id="course" name="course" autocomplete="off">
+                <option value="Not sure">Not sure yet</option>
+                <option value="web-development">web-development</option>
+                <option value="data-science">data-science</option>
+                <option value="digital-marketing">digital-marketing</option>
+                <option value="graphic-design">graphic-design</option>
+            </select><br>
+
+            <label for="citizenOrInternational">Are you an Australian Citizen, Permanent Resident or New Zealand Citizen?</label>
+            <select id="citizenOrInternational" name="citizenOrInternational" required autocomplete="country">
+                <option value="" disabled selected>Select your status</option>
+                <option value="Australian Citizen">Australian Citizen</option>
+                <option value="Permanent Resident">Permanent Resident</option>
+                <option value="New Zealand Citizen">New Zealand Citizen</option>
+                <option value="International Student">International Student</option>
+            </select><br>
+
+            <div class="regionField">
+                <label for="region">If International Student, what region are you residing in?</label>
+                <textarea id="region" name="region" rows="2" autocomplete="address-level1"></textarea>
+            </div>
+
+            <label for="contact">Preferred Contact Method:</label>
+            <select id="contact" name="contact" autocomplete="off">
+                <option value="both">Both</option>
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+            </select><br>
+            </textarea><br>
+            <button type="submit">Submit Enquiry</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Gelos Training Institute. All rights reserved.</p>
+                    <p>Microsoft. (2025). Copilot (May version) [Large language model]. https://copilot.microsoft.com has been used to assist in this webiste project <br>
+            The usage of ai considers the TAFE policy <a href="https://cd.tafensw.edu.au/api/-/media/Files/PDFs/Brochures-Flyers/TAFE-NSW-Generative-Artificial-Intelligence-in-Education-Policy.pdf?rev=782ce766d8614a72a0bdd1d1db6ec63a"><u><b>Generative Artificial Intelligence in Education</b></u> </a>.
+            </p><br>
+            <p>This is a fictitious site created for educational purposes. Sources of graphic icons:
+            <a href="https://www.freepik.com/icon/facebook_1384021#fromView=resource_detail&position=14"><u>Freepik Social media Icons</u></a>    
+            <a href="https://fonts.google.com/icons"><u>GOOGLE icons</u></a>    
+        </p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/" aria-label="Facebook">
+                <img src="images/icons/icons_general/facebook_1384021.png" class="footer-social-icon" alt="Facebook icon">
+            </a>
+            <a href="https://www.instagram.com/" aria-label="Instagram">
+                <img src="images/icons/icons_general/instagram_1384031.png" class="footer-social-icon" alt="Instagram icon">
+            </a>
+        </div>
+    </footer>
+    <script src="js/formVal.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
